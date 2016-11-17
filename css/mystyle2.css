@@ -1,0 +1,118 @@
+html, body, div, span,h1, h2,h6, p,ul, li,footer, header, hgroup, 
+nav,
+  {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+
+
+/*end of eric meyer css reset. Got rid font-size: 100%, per Cira's advice. I also got rid of font-inherit since when tried to style h1 said was already done. I assumed may have been the font inherit in css reset. Klea 11/11*/
+
+/* Connie, Klea what do you think of one of  these color scheme for the site? It is a Saphire Color Scheme our birthstone                  http://www.color-hex.com/color-palette/5984                   http://colorpalettes.net/tag/sapphire-blue/ 
+http://www.paletton.com/#uid=53+0u0kIespqfEnEsFHLln1Pvho   Luz */
+
+
+body {
+    margin: 0 auto; font-family: 'Rancho', cursive;
+    background-color:#FFEBFF;
+  }
+
+#container { 
+    width: 960px;  /* Luz, I had probably done all of widths as 960 or 950px. I see you adjusted the rest of divs to 100%. That's fine. Looks good, but I can't seem to get footer to look the same as index page, where it is same size as rest of page. On rest of page, footer goes to entire page. 11/17 Klea */    /*Wonder if it's because I made height smaller and added padding and margin to vertically center text? */
+    
+    margin: 0 auto;
+    background-color:sapphire-blue;  /*does this mean we need to get rid of, and that will already have this color so redundant? Klea 11/17 */
+}
+
+header {
+    width:100%;
+    height: 80px;
+    text-align: center;
+    background-color: #867DB0;
+    float: right;
+    clear: both;
+    margin:5px;
+}
+
+/*Cira, why does it say heading for h1 has already been defined? Is it css reset? 11/13 10:11PM. 11/14, per Cira is okay. Ignore. */
+h2 { 
+    font-size: 30px;
+    color: #c256c2;
+}
+
+nav {
+    width: 100%;
+    height: 45px;
+    background-color: #4f73bf;
+    clear: both;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    float: left;
+    text-transform: uppercase; /*don't think need to keep text-transform. copied from notes to see that possible to do that and font weight. K*/
+    font-weight: 600;
+}
+
+.nav-bar li a:link {
+    text-decoration: none;
+    display: block;
+    width: 190px;
+    padding: 14px 0; 
+    text-align: center;
+    color: #00D4A5;
+}
+
+.nav-bar li a:visited {
+    text-decoration: line-through
+}
+
+.nav-bar li a:hover {
+    background-color: #5665d4;
+    color: #969be1;
+}
+
+section { /* what do you guys think about removing the background color on thissection. to make it more unified with the other pages. It just seems a bit too dark or we can use this as a background  background-color: #9095EF; Luz*/
+    width: 100%; 
+    height: 500px;
+    float: left;
+    position: relative;
+    left: 1px; /*klea adjusting to try and get rid of sliver of blue space. so far is 20px. Will make smaller to see what happens. Sliver of blue gone, but now have to figure out if words hidden underneath. Will probably work on this issue in class. 11/13 8:50pm. Wonder if need to throw in a z-index somewhere.*/
+ }
+
+footer {  /*klea fixed link so now goes to top. Make font a bit bigger. -Klea 11/17 */
+    width: 100%;
+    height: 25px; /*height orig 36px. Klea adding padding instead to center back to top vertically. Warning says may be too big since added padding, so I am making height smaller. 11/17*/
+    padding-top: 5px;
+    margin-bottom: -5px; /*I added margin to try and center. I am not sure why page one has short width and and rest of pages, the footer takes up whole page. Klea */
+    font-size:15px; /*font says 12px. will try a bit larger. Centered text. 11/17. Klea*/
+    text-align: center;
+    background-color: #C9ECFF;
+    float:right;
+    font-family: 'Risque', cursive;
+    
+}
+
+footer > a {  /*I got rid of underline for 'back to top'. Klea 11/17*/
+     text-decoration: none;
+}
