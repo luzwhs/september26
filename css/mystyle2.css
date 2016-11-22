@@ -18,7 +18,7 @@ ol, ul {
 	list-style: none;
 }
 
-
+/* Why does it look like most of Eric Meyer reset I'd put in is mostly gone? Is it better this way? Not complaining, just wondering if this is a better way!! Klea. 11/21 */
 
 
 /*end of eric meyer css reset. Got rid font-size: 100%, per Cira's advice. I also got rid of font-inherit since when tried to style h1 said was already done. I assumed may have been the font inherit in css reset. Klea 11/11*/
@@ -36,17 +36,17 @@ body {
     width: 960px;  /* Luz, I had probably done all of widths as 960 or 950px. I see you adjusted the rest of divs to 100%. That's fine. Looks good, but I can't seem to get footer to look the same as index page, where it is same size as rest of page. On rest of page, footer goes to entire page. 11/17 Klea */    /*Wonder if it's because I made height smaller and added padding and margin to vertically center text? */
     
     margin: 0 auto;
-    background-color:sapphire-blue;  /*does this mean we need to get rid of, and that will already have this color so redundant? Klea 11/17 */
+    background-color:sapphire-blue;  /* I don't understand warning. I assume it's because we put in a body color of #FFEBFF, but the container is the body in a way, and we put in another color. Klea 11/21 */
 }
 
 header {
     width:100%;
-    height: 80px;
+    height: 120px;  /* right now height is 80px. made 120px to fit website description. Klea 11/21 */
     text-align: center;
     background-color: #867DB0;
     float: right;
     clear: both;
-    margin:5px;
+    margin-top: 8px; /*adjusted margin to margin top. Now aligned Klea 11/21 */
 }
 
 /*Cira, why does it say heading for h1 has already been defined? Is it css reset? 11/13 10:11PM. 11/14, per Cira is okay. Ignore. */
@@ -70,7 +70,7 @@ nav ul{
 
 nav li{
     float: left;
-    text-transform: uppercase; /*don't think need to keep text-transform. copied from notes to see that possible to do that and font weight. K*/
+    text-transform: uppercase; 
     font-weight: 600;
 }
 
@@ -98,6 +98,10 @@ section { /* what do you guys think about removing the background color on thiss
     float: left;
     position: relative;
     left: 1px; /*klea adjusting to try and get rid of sliver of blue space. so far is 20px. Will make smaller to see what happens. Sliver of blue gone, but now have to figure out if words hidden underneath. Will probably work on this issue in class. 11/13 8:50pm. Wonder if need to throw in a z-index somewhere.*/
+ }
+ 
+ section >img {
+     float: left;
  }
 
 footer {  /*klea fixed link so now goes to top. Make font a bit bigger. -Klea 11/17 */
