@@ -1,9 +1,25 @@
-html, body, div, span,h1, h2,h6, p,ul, li,footer, header, hgroup, 
-nav,
-  {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -17,70 +33,95 @@ body {
 ol, ul {
 	list-style: none;
 }
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-/* Why does it look like most of Eric Meyer reset I'd put in is mostly gone? Is it better this way? Not complaining, just wondering if this is a better way!! Klea. 11/21 */
 
-
-/*end of eric meyer css reset. Got rid font-size: 100%, per Cira's advice. I also got rid of font-inherit since when tried to style h1 said was already done. I assumed may have been the font inherit in css reset. Klea 11/11*/
+/*end of eric meyer css reset. Got rid font-size: 100%, per Cira's advice. This reset looked like edited, so I put it back again and once again, deleted font size, but kept font-inherit. Is it correct to keep font inherit? Klea 11/27*/
 
 /* Connie, Klea what do you think of one of  these color scheme for the site? It is a Saphire Color Scheme our birthstone                  http://www.color-hex.com/color-palette/5984                   http://colorpalettes.net/tag/sapphire-blue/ 
 http://www.paletton.com/#uid=53+0u0kIespqfEnEsFHLln1Pvho   Luz */
 
+/* Luz, my apologies, but I am used to https://color.adobe.com/ so I will try and stick to your theme, but faster for me to work with this and then adjust tomorrow. 11/28 Klea */
 
 body {
-    margin: 0 auto; font-family: 'Rancho', cursive;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
     background-color:#FFEBFF;
   }
+  
+body p {
+    padding: 13px 10px;
+    margin-bottom: 3px;
+}
 
 #container { 
-    width: 960px;  /* Luz, I had probably done all of widths as 960 or 950px. I see you adjusted the rest of divs to 100%. That's fine. Looks good, but I can't seem to get footer to look the same as index page, where it is same size as rest of page. On rest of page, footer goes to entire page. 11/17 Klea */    /*Wonder if it's because I made height smaller and added padding and margin to vertically center text? */
-    
-    margin: 0 auto;
-    background-color:sapphire-blue;  /* I don't understand warning. I assume it's because we put in a body color of #FFEBFF, but the container is the body in a way, and we put in another color. Klea 11/21 */
+    width: 960px; 
+    margin: 0 auto; /* Klea got rid of sapphire blue here. Did not make sense since the container is our body in way and body already has a background color listed. 11/26 */
 }
 
 header {
-    width:100%;
-    height: 120px;  /* right now height is 80px. made 120px to fit website description. Klea 11/21 */
+    width: 960px;
     text-align: center;
+    padding-top: 19px;
+    margin-top: 37px;
     background-color: #867DB0;
-    float: right;
     clear: both;
-    margin-top: 8px; /*adjusted margin to margin top. Now aligned Klea 11/21 */
+    font-family: 'Allura', cursive;
+    font-size:93px;
+    color: #ffbfff; 
+ }
+
+header p {
+    margin-top: -10px;
+    margin-left: 22px;
+    padding-bottom: 23px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Gentium Basic', serif;
 }
 
-/*Cira, why does it say heading for h1 has already been defined? Is it css reset? 11/13 10:11PM. 11/14, per Cira is okay. Ignore. */
-h2 { 
+
+/* h2 { 
     font-size: 30px;
     color: #c256c2;
-}
+} Klea ghosted out for now. Had warning, but I also want to rework h1-h4 with new fonts I have. 11/26 */
+
 
 nav {
-    width: 100%;
-    height: 45px;
-    background-color: #4f73bf;
+    width: 960px; 
     clear: both;
 }
 
 nav ul{
     list-style-type: none;
-    margin: 0;
+    margin: 0; /* 11/26 should this have auto? Klea */
     padding: 0;
 }
 
 nav li{
     float: left;
-    text-transform: uppercase; 
-    font-weight: 600;
-}
+   }
 
 .nav-bar li a:link {
     text-decoration: none;
     display: block;
-    width: 190px;
-    padding: 14px 0; 
+    width: 240px;
+    padding: 11px 0;
     text-align: center;
-    color: #00D4A5;
+    background-color:#f4354c;
+    font-family: /*'Allura', cursive;*/ 'Open Sans', sans-serif;
+    font-size: 18px;
 }
 
 .nav-bar li a:visited {
@@ -89,34 +130,107 @@ nav li{
 
 .nav-bar li a:hover {
     background-color: #5665d4;
-    color: #969be1;
+    color: #ffbfff;
+}
+
+figure {
+    display: block;
+    float: left;
+    position: relative;
+    margin-top: -2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+}
+
+figure img {
+    display: block;
+    margin: 12px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    font-family: 'Gentium Basic' serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 254px; 
+    height: 150px;
+    line-height: 1.2em;
+    background-color: #f7cff7; 
+}
+
+figcaption > ul {
+    margin-top: -12px;
+}
+
+#secondary-headers {
+    color: #2364ed;
+    background-color: #f7d4f7;
+    font-family: 'Allura', cursive;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 315%;
+    padding-top: 19px;
+    padding-bottom: 17px;
+}
+
+
+h3 {
+    color: #f4354c;
+    font-size: 24px;
+    font-family: 'Gentium Basic', serif;
+    font-weight: bold;
+    padding: 6px 0;
+    margin-top: 6px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.front-page { /* I put this here because I want front section to look diff since all paras and an aside. 11/27 klea */
+    position: relative;
+    background-color: white;
+    float: left;
+    text-align: left;
+}
+
+.front-page > ul a {
+    margin-left: 25px;
+    text-decoration: none;
+    line-height: 1.8em;
+    padding: 5px 0;
 }
 
 section { /* what do you guys think about removing the background color on thissection. to make it more unified with the other pages. It just seems a bit too dark or we can use this as a background  background-color: #9095EF; Luz*/
-    width: 100%; 
-    height: 500px;
+    width: 960px; /*11/27 klea keeping this, but index page will be .front-page class so I can style paras with aside. */
     float: left;
     position: relative;
-    left: 1px; /*klea adjusting to try and get rid of sliver of blue space. so far is 20px. Will make smaller to see what happens. Sliver of blue gone, but now have to figure out if words hidden underneath. Will probably work on this issue in class. 11/13 8:50pm. Wonder if need to throw in a z-index somewhere.*/
- }
+}
  
- section >img {
-     float: left;
- }
+ section p {
+   line-height: 1.2em;
+   padding: 15px 25px;
+}
+ 
+ section li a {
+    margin-left: 43px;
+    text-decoration: none;
+    line-height: 1.8em;
+}
+ 
 
-footer {  /*klea fixed link so now goes to top. Make font a bit bigger. -Klea 11/17 */
-    width: 100%;
-    height: 25px; /*height orig 36px. Klea adding padding instead to center back to top vertically. Warning says may be too big since added padding, so I am making height smaller. 11/17*/
-    padding-top: 5px;
-    margin-bottom: -5px; /*I added margin to try and center. I am not sure why page one has short width and and rest of pages, the footer takes up whole page. Klea */
-    font-size:15px; /*font says 12px. will try a bit larger. Centered text. 11/17. Klea*/
+footer {  
+    width: 960px; /* klea changed back to 960px from 100% width 11/27 */
+    padding: 9px 0;
     text-align: center;
-    background-color: #C9ECFF;
-    float:right;
-    font-family: 'Risque', cursive;
-    
+    background-color: #867DB0;
+    clear: both;
 }
 
-footer > a {  /*I got rid of underline for 'back to top'. Klea 11/17*/
+footer a {
      text-decoration: none;
+     font-family: 'Allura', cursive;
+     color:  #ffbfff;
+     font-size: 36px;
 }
