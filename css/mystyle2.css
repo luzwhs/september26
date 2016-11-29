@@ -52,7 +52,7 @@ table {
 /* Connie, Klea what do you think of one of  these color scheme for the site? It is a Saphire Color Scheme our birthstone                  http://www.color-hex.com/color-palette/5984                   http://colorpalettes.net/tag/sapphire-blue/ 
 http://www.paletton.com/#uid=53+0u0kIespqfEnEsFHLln1Pvho   Luz */
 
-/* Luz, my apologies, but I am used to https://color.adobe.com/ so I will try and stick to your theme, but faster for me to work with this and then adjust tomorrow. 11/28 Klea */
+/* Luz, my apologies, but I am used to https://color.adobe.com/ so I will try and stick to your theme, but faster for me to work with this and then adjust tomorrow. Ended up using google main search page. 11/28 Klea */
 
 body {
     margin: 0 auto;
@@ -137,7 +137,7 @@ figure {
     display: block;
     float: left;
     position: relative;
-    margin-top: -2px;
+    margin-top: 2px;
     margin-left: auto;
     margin-right: auto;
     width: 290px;
@@ -153,25 +153,34 @@ figure img {
 figcaption {
     font-family: 'Gentium Basic' serif;
     text-align: center;
+    margin-top: -5px;
     margin-left: auto;
     margin-right: auto;
     width: 254px; 
-    height: 150px;
+    height: 177px;
     line-height: 1.2em;
-    background-color: #f7cff7; 
+    background-color: #f9dbf9; 
 }
 
 figcaption > ul {
-    margin-top: -12px;
+    margin-top: 5px;
+    line-height: 1.2em;
+}
+
+.unified-libra {
+    width: 254px;
+    height: 61px;
+    margin-top: 12px;
+    background-color:  #f9dbf9;
 }
 
 #secondary-headers {
     color: #2364ed;
-    background-color: #f7d4f7;
+    background-color: #ffbfff;
     font-family: 'Allura', cursive;
-    font-weight: bolder;
+    font-weight: 600; /* 11/29 adjusted from bolder to 600. this font looked doubled when viewed on my old ipad. See if this helps to keep smooth.. Klea */
     text-align: center;
-    font-size: 315%;
+    font-size: 310%;
     padding-top: 19px;
     padding-bottom: 17px;
 }
@@ -188,8 +197,13 @@ h3 {
     text-align: center;
 }
 
+h3 > a {
+    color: #f4354c;
+}
+
 .front-page { /* I put this here because I want front section to look diff since all paras and an aside. 11/27 klea */
     position: relative;
+    margin-top: 4px;
     background-color: white;
     float: left;
     text-align: left;
@@ -206,6 +220,8 @@ section { /* what do you guys think about removing the background color on thiss
     width: 960px; /*11/27 klea keeping this, but index page will be .front-page class so I can style paras with aside. */
     float: left;
     position: relative;
+    margin-bottom: 9px;
+    background-color: white;
 }
  
  section p {
@@ -219,9 +235,8 @@ section { /* what do you guys think about removing the background color on thiss
     line-height: 1.8em;
 }
  
-
 footer {  
-    width: 960px; /* klea changed back to 960px from 100% width 11/27 */
+    width: 960px; 
     padding: 9px 0;
     text-align: center;
     background-color: #867DB0;
