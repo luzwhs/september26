@@ -156,7 +156,7 @@ figcaption {
     margin-top: -5px;
     margin-left: auto;
     margin-right: auto;
-    width: 254px; 
+    width: 258px;   /* 11/30 upped from 254 to 258 to fix larger date font and match up with figure size. now must change font size to 23 from 22 */
     height: 177px;
     line-height: 1.2em;
     background-color: #f9dbf9; 
@@ -168,7 +168,7 @@ figcaption > ul {
 }
 
 .unified-libra {
-    width: 254px;
+    width: 258px;  /* 11/30 upped from 254 to 258. dates too small so want to expand box */
     height: 61px;
     margin-top: 12px;
     background-color:  #f9dbf9;
@@ -249,3 +249,5 @@ footer a {
      color:  #ffbfff;
      font-size: 36px;
 }
+
+
