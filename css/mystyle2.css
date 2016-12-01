@@ -243,6 +243,63 @@ footer {
     clear: both;
 }
 
+/* klea will try to add css to style classes that added on About Page bios & img 12/1 */
+
+.connie-profile-pic {
+    margin-left: 35px;
+    margin-right: 25px;
+    margin-top: 15px;
+    display: block;
+    position: relative;
+    float:left;
+}
+
+.connie-bio {
+    width: 790px; 
+    margin-left: 97px; 
+    margin-right: auto;
+    vertical-align: top;
+}
+
+.luz-profile-pic {
+    margin-left: 43px;
+    margin-right: 25px;
+    margin-top: 15px;
+    display: block;
+    position: relative;
+    float:left;
+}
+
+.luz-bio {
+    width: 790px;
+    margin-left: 85px;
+    margin-right: auto;
+    margin-bottom: 282px;
+    vertical-align: top;
+}
+
+.klea-profile-pic {
+    margin-left: 35px;
+    margin-right: 25px;
+    margin-top: 15px;
+    display: block;
+    position: relative;
+    float:left;
+}
+
+.klea-bio p {
+    width: 790px;
+    margin-left: 67px;
+    margin-right: auto;
+    margin-bottom: 282px;
+    vertical-align: top;  
+}
+
+.klea-stock-list li {  
+    list-style-type: circle;
+    margin-left: 375px;
+}
+
 footer a {
      text-decoration: none;
      font-family: 'Allura', cursive;
